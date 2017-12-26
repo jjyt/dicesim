@@ -43,7 +43,47 @@
         </div>
       </div>
       <br>
-      <button type="submit" class="btn btn-primary" id="simbutton">Start Sim</button>
+      <div class="row">
+        <div class="col-sm">
+          <div class="input-group">
+            <span class="input-group-addon">Max Losses</span>
+            <input id="maxlosses" type="text" class="form-control" value="18">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="input-group">
+            <span class="input-group-addon">Bet Multiplier</span>
+            <input id="betincrease" type="text" class="form-control" value="2.0">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm">
+          <div class="input-group">
+            <span class="input-group-addon">Max Bet</span>
+            <input id="maxlossesvalue" type="text" class="form-control" value="0.00000000"disabled>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="input-group">
+            <span class="input-group-addon">Cashout above</span>
+            <input id="wincondition" type="text" class="form-control" value="2.00000000">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm">
+          <button type="submit" class="btn btn-primary" id="simbutton">Start Sim</button>
+        </div>
+        <div class="col-sm">
+          <div class="input-group">
+            <span class="input-group-addon">Bet Batches</span>
+            <input id="betbatches" type="text" class="form-control" value="200">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="main.js"></script>
