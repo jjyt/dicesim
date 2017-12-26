@@ -1,0 +1,54 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>🎲 𝑫𝑰𝑪𝑬 🎲</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="dicesim.css">
+</head>
+
+<body>
+  <div class="container h-100 d-flex">
+    <div class="jumbotron my-auto">
+      <h1 class="text-center">BTC Dice Simulator</h1>
+      <hr />
+      <div class="row">
+        <div class="col-sm">
+          <div class="input-group">
+            <span class="input-group-addon">Balance</span>
+            <input id="balance" type="text" class="form-control" placeholder="Enter a starting balance..." value="1.00000000">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="input-group">
+            <span class="input-group-addon">Bank</span>
+            <input id="bank" type="text" class="form-control" value="0.00000000">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm">
+          <div class="input-group">
+            <span class="input-group-addon">Base Bet</span>
+            <input id="basebet" type="text" class="form-control" value="0.00000001">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="input-group">
+            <span class="input-group-addon">Bet Chance</span>
+            <input id="betchance" type="text" class="form-control" value="49.95">
+          </div>
+        </div>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary" id="simbutton">Start Sim</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
