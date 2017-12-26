@@ -1,11 +1,11 @@
 window.onload = function () {
-    var balance = document.getElementById('balance');
-    var maxlosses = document.getElementById('maxlosses');
-    var baseBet = document.getElementById('basebet');
-    var betincrease = document.getElementById('betincrease');
-    var betchance = document.getElementById('betchance');
+    var balance = document.getElementById('balance');//
+    var maxlosses = document.getElementById('maxlosses');//
+    var baseBet = document.getElementById('basebet');//
+    var betincrease = document.getElementById('betincrease');//
+    var betchance = document.getElementById('betchance');//
     var wincondition = document.getElementById('wincondition');
-    var betchance = document.getElementById('bank');
+    var betchance = document.getElementById('bank');//
     var simIsRunning = false;
 
     function formatInputBTC(event) {
@@ -15,6 +15,13 @@ window.onload = function () {
     function formatInputChance(event) {
         if(this.value < 0 || this.value > 99.99){
             this.value = 49.95;
+        }
+        this.value = parseFloat(this.value).toFixed(2);
+    }
+
+    function formatInputIncrease(event) {
+        if(this.value <= 1 || this.value >= 20.00){
+            this.value = 2.00;
         }
         this.value = parseFloat(this.value).toFixed(2);
     }
