@@ -1,4 +1,5 @@
 window.onload = function () {
+<<<<<<< HEAD
     var balance = document.getElementById('balance').value;//
     var maxlosses = document.getElementById('maxlosses').value;//
     var maxlossesvalue = document.getElementById('maxlossesvalue').value;//
@@ -20,6 +21,16 @@ window.onload = function () {
         max = Math.floor(max);
         return Math.floor(randomNumber * (max - min + 1)) + min;
     }
+=======
+    var balance = document.getElementById('balance');//
+    var maxlosses = document.getElementById('maxlosses');//
+    var baseBet = document.getElementById('basebet');//
+    var betincrease = document.getElementById('betincrease');//
+    var betchance = document.getElementById('betchance');//
+    var wincondition = document.getElementById('wincondition');
+    var betchance = document.getElementById('bank');//
+    var simIsRunning = false;
+>>>>>>> origin/master
 
     function formatInputBTC(event) {
         this.value = parseFloat(this.value).toFixed(8);
@@ -38,7 +49,11 @@ window.onload = function () {
         }
         this.value = parseFloat(this.value).toFixed(2);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     function startSim() {
         if (document.getElementById('simbutton').innerText === "Start Sim" ){
             document.getElementById('simbutton').innerText = "Stop Sim";
