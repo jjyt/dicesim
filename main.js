@@ -40,18 +40,33 @@ window.onload = function () {
     }
     
     function startSim() {
-        if (document.getElementById('simbutton').innerText === "Start Sim" ){
+        if (document.getElementById('simbutton').innerText === "Start Sim"){
             document.getElementById('simbutton').innerText = "Stop Sim";
-            var rolls = []
-            for (var i = 1; i <= this.betbatches; i++) {
-                let roll = getRandomIntInclusive(1,9999);
-                alert(roll);
-                rolls.push(roll);
-            }
-            alert(rolls.length);
+            setTimeout(function(){
+                if (document.getElementById('simbutton').innerText === "Stop Sim"){
+                    var rolls = [];
+                    var lossStreak = 0;
+                    for (var i = 0; i < document.getElementById('betbatches').value; i++) {
+                        let roll = getRandomIntInclusive(1,9999);
+                        rolls.push(roll);
+                    }
+                    for (var i = 0; i < rolls.length; i++) {
+                        if (rolls[i] <= (document.getElementById('betchance').value*100)) { // win
+                            
+                        }
+                    }
+                    console.log(rolls);
+
+                }
+                else{
+                    return
+                }
+                setTimeout(arguments.callee,10);
+                },10)
         } 
         else {
             document.getElementById('simbutton').innerText = "Start Sim";
+            return
         }
     }
 
